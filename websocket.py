@@ -9,7 +9,7 @@ async def handle_message(websocket, message):
     db_connection = mariadb.connect(
     user="myuser",
     password="mypassword",
-    host="pi.local",
+    host="192.168.2.208",
     database="mydb"
     )
 #,SENSORNR,SENSORLOCATION,DATETIME (24,19,1,'Keller',NOW())
@@ -41,7 +41,7 @@ async def server(websocket, path):
 
 if __name__ == "__main__":
     
-    start_server = websockets.serve(server, '192.168.2.196', 8657)
+    start_server = websockets.serve(server, '192.168.2.208', 8657)
 
     asyncio.get_event_loop().run_until_complete(start_server)
     print("WebSocket server started.")

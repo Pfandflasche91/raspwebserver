@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const IP = '192.168.2.196'; // Deine IP-Adresse
+const IP = '192.168.2.208'; // Deine IP-Adresse
 const PORT = 3000; // Dein Port
 
 // Erstelle einen HTTP-Server

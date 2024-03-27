@@ -3,7 +3,7 @@ import mariadb
 db_connection = mariadb.connect(
     user="myuser",
     password="mypassword",
-    host="pi.local",
+    host="192.168.2.208",
     database="mydb"
 )
 
